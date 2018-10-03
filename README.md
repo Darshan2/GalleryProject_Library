@@ -19,7 +19,7 @@ it will load the 'All media' folder files in a background thread. It's a must ot
  intent.putExtra(GalleryConsts.INTENT_PREVIOUSLY_SELECT_ITEMS_FOLDER, mGalleryLoader.getPreviousSelectedItemsFolderName());
  startActivityForResult(intent, GALLERY_ACTIVITY_REQUEST_CODE);
  ```
-<b> mediaType may be GalleryConst.IMAGE_TYPE, GalleryConst.VIDEO_TYPE, GalleryConst.IMAGE_VIDEO_TYPE(pass this by default)</b><br>
+mediaType may be <b> GalleryConst.IMAGE_TYPE, GalleryConst.VIDEO_TYPE, GalleryConst.IMAGE_VIDEO_TYPE(pass this by default)</b><br>
  
  <br>
  In your activitys onActivityResult, you will receive the list of all the selected files list, along with their parent folder name,
