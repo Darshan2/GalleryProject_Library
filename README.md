@@ -8,9 +8,11 @@ it will load the 'All media' folder files in a background thread.It's a must oth
 
 
  <br>
- Pass type of media file you want the library to load, 'previously/pre selected imges list', 'previously selected files folder name' as intent extras. If previously selectes image list doesnot exist pass NULL, if previously selected files folder name does not exist pass empty string.
+ Pass type of media file you want the library to load, 'previously/pre selected imges list', 'previously selected files folder name' as intent extras. 
  
  ```java
+ GalleryLoader mGalleryLoader = GalleryLoader.getInstance;
+ 
  Intent intent = new Intent(this, GalleryActivity.class);
  intent.putExtra(GalleryConsts.INTENT_MEDIA_TYPE, mediaType);
  intent.putExtra(GalleryConsts.INTENT_PREVIOUSLY_SELECT_ITEMS, mGalleryLoader.getPreviousSelectedImages());
@@ -21,7 +23,7 @@ it will load the 'All media' folder files in a background thread.It's a must oth
  
  <br>
  In your activitys onActivityResult, you will receive the list of all the selected files list, along with their parent folder name,
- store them in GalleryLoader
+ store them in GalleryLoader, and do anything you want with the selected files list
  
  ```java
  @Override
