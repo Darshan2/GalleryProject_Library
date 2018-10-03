@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FileExplorer</string>
+
+    <string name="SubDir">SubDir</string>
+    <string name="Files">Files</string>
+    <string name="back">Back</string>
+
+    <string name="video">Video</string>
+    <string name="image">Image</string>
+
+    <string name="media_type">Media type</string>
+    <string name="location_type">Location type</string>
+
+    <string name="device_memory">Device memory</string>
+    <string name="sd_card">Sd card</string>
+    <string name="select">Select</string>
+    <string name="items">items</string>
+    <string name="folder_toolbar_title">వీడియో లేదా ఫోటో ఎంచుకోండి</string>
+    <string name="Select">తరువాత </string>
+    <string name="items_selected">ఫోటోలు ఎంపిక చేయబడినవి</string>
+    <string name="No_first_frame_video_thumb">No first frame thumb available</string>
+    <string name="all_media_files">All media files</string>
+    <string name="today">TODAY</string>
+    <string name="yesterday">YESTERDAY</string>
+    <string name="last_week">LAST WEEK</string>
+    <string name="older_than_week">OLDER</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ededed"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.darshan.android.fileexplorer.GalleryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/gallery_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/folders_toolbar">
+
+            <include layout="@layout/toolbar_folders"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/itemSelect_toolbar"
+            android:visibility="gone">
+
+            <include layout="@layout/toolbar_gallery_item_select"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gallery_toolbar"
+        android:id="@+id/dirName_RV">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:clipToPadding="false"
+        android:layout_below="@id/gallery_toolbar"
+        android:id="@+id/gridImage_RV"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:clipToPadding="false"
+        android:layout_below="@id/gallery_toolbar"
+        android:id="@+id/allMediaGrid_RV"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<GridView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/all_media_folders_file_gridView"-->
+        <!--android:numColumns="3"-->
+        <!--android:visibility="gone">-->
+    <!--</GridView>-->
+
+
+    <ProgressBar
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/load_PB"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
