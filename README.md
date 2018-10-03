@@ -1,6 +1,6 @@
 # GalleryProject_Library
 
- When Lokal app start call 
+ When App start call 
  ```java
  GalleryLoader.getInstance().startLoadingImages(getApplicationContext(), getContentResolver()); 
  ```
