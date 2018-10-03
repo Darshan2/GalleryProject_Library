@@ -1,6 +1,6 @@
 # GalleryProject_Library
 
- When App start call 
+ When App start, in your launcher activity call 
  ```java
  GalleryLoader.getInstance().startLoadingImages(getApplicationContext(), getContentResolver()); 
  ```
