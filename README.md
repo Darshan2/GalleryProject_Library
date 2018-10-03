@@ -4,7 +4,7 @@
  ```java
  GalleryLoader.getInstance().startLoadingImages(getApplicationContext(), getContentResolver()); 
  ```
-it will load the 'All media' folder files in a background thread.It's a must otherwise when user clicked on ALL MEDIA folder it may not show any files.</br>
+it will load the 'All media' folder files in a background thread. It's a must otherwise when user clicked on ALL MEDIA folder it may not show any files.</br>
 
 
  <br>
