@@ -12,7 +12,7 @@ it will load the 'All media' folder files in a background thread. It's a must ot
  Pass type of media file you want the library to load, 'previously/pre selected imges list', 'previously selected files folder name' as intent extras. 
  
  ```java
- GalleryLoader mGalleryLoader = GalleryLoader.getInstance;
+ GalleryLoader mGalleryLoader = GalleryLoader.getInstance();
  
  Intent intent = new Intent(this, GalleryActivity.class);
  intent.putExtra(GalleryConsts.INTENT_MEDIA_TYPE, mediaType);
