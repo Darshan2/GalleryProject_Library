@@ -1,4 +1,5 @@
 # GalleryProject_Library
+<b>Warn : You need READ_EXTERNAL_STORAGE, and WRITE_EXTERNAL_STORAGE 
 
  When App start, in your launcher activity call 
  ```java
